@@ -54,8 +54,6 @@ delay(100);
 void getRpm(){
   tCAN message;
   int rpm;
-  int engine_data;
-  int timeout = 0;
   char message_ok = 0;
   // Prepair message
   message.id = PID_REQUEST;
@@ -84,7 +82,7 @@ void getRpm(){
           {   /* Details from http://en.wikipedia.org/wiki/OBD-II_PIDs */
                         //   ((A*256)+B)/4    [RPM]
             rpm =  ((message.data[3]*256) + message.data[4])/4;
-            if(rpm=>700 && rpm<=6450){
+            if(rpm>=700 && rpm<=6450){
               Serial.print(rpm);
               Serial.println("...rpm");
               delay(1000);
