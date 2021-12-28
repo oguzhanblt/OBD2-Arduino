@@ -2,11 +2,11 @@
 Arduino-OBD2 connection project
 
 [TR]
-Arduino ile OBD2 bağlantısının yapılarak araçtan bilgi alınması sağlanmıştır.
-getRpm() Aracın devir bilgisini alarak Serial monitore yazmaktadir.
-getCoolantTemp() Aracin motor suyu sicakligi bilgisini alarak Serial monitore yazmaktadir.
+<p>Arduino ile OBD2 bağlantısının yapılarak araçtan bilgi alınması sağlanmıştır.</p>
+<p>getRpm() Aracın devir bilgisini alarak Serial monitore yazmaktadir.</p>
+<p>getCoolantTemp() Aracin motor suyu sicakligi bilgisini alarak Serial monitore yazmaktadir.</p>
 
 [ENG]
-By providing obd2 connection with arduino, data is obtained from the car.
-getRpm() shows the vehicles RPM info
-getCoolantTemp() shows vehicles Coolant Temperature info
+<p>By providing obd2 connection with arduino, data is obtained from the car.</p>
+<p>getRpm() shows the vehicles RPM info</p>
+<p>getCoolantTemp() shows vehicles Coolant Temperature info</p>
