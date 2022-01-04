@@ -46,11 +46,11 @@ delay(100);
 Serial.print("Engine Load: ");
 Serial.println(buffer);
 delay(100);
-Canbus.ecu_req(VEHICLE_SPEED,buffer);
+/*Canbus.ecu_req(VEHICLE_SPEED,buffer);
 delay(100);
 Serial.print("Vehicle Speed: ");
 Serial.println(buffer);
-delay(100);
+delay(100);*/
 
 }
 
@@ -214,8 +214,8 @@ void getVehicleSpeed(){
           if(message.data[2]==0x0c)
           {   /* Details from http://en.wikipedia.org/wiki/OBD-II_PIDs */
                         // message.data[3]=speed
-if(message.data[3]>=1 &&  message.data[3]<250){♣️    
 speed =  message.data[3];
+if(message.data[3]>=1 &&  message.data[3]<250){   
             Serial.print(speed);
             Serial.println("...km/h");
             delay(1000);
